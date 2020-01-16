@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+  <test name="Test">
+    <classes>
+      <class name="childhomecare.admintestcases.AdministratorPageTest"/>
+      <class name="childhomecare.admintestcases.ClientPageTest"/>
+      <class name="childhomecare.admintestcases.DashboardPageTest"/>
+      <class name="childhomecare.sittertestcases.SitterFinancialInformationPageTest"/>
+      <class name="childhomecare.admintestcases.SitterPageTest"/>
+      <class name="childhomecare.admintestcases.LoginPageTest"/>
+      <class name="childhomecare.admintestcases.FamilyInformationPageTest"/>
+      <class name="Practice.Practice"/>
+      <class name="childhomecare.sittertestcases.SitterDashboardPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ChildHomeCare Automation Test Suite">
+
+	<listeners>
+		<listener class-name="childhomecare.extentReportListener.ExtentReporterNG" />
+	</listeners>
+
+	<test name="ChildHomeCare Test Cases">
+		<classes>
+			<!-- <class name="childhomecare.admintestcases.LoginPageTest"></class> -->
+			<class name="childhomecare.admintestcases.DashboardPageTest"></class>
+			<!-- <class name="childhomecare.admintestcases.ClientPageTest"></class>
+			<class name="childhomecare.admintestcases.SitterPageTest"></class> -->
+		</classes>
+	</test>
+</suite>

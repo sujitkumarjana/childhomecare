@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ChildHomeCare Automation Test Suite]">
+  <listeners>
+    <listener class-name="childhomecare.extentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test name="ChildHomeCare Test Cases">
+    <classes>
+      <class name="childhomecare.admintestcases.DashboardPageTest"/>
+    </classes>
+  </test> <!-- ChildHomeCare Test Cases -->
+</suite> <!-- Failed suite [ChildHomeCare Automation Test Suite] -->
