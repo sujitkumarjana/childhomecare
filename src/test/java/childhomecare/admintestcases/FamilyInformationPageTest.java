@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import childhomecare.base.TestBase;
-import childhomecare.pagesadmin.ClientPage;
+import childhomecare.pagesadmin.AdminClientPage;
 import childhomecare.pagesadmin.DashboardPage;
 import childhomecare.pagesadmin.FamilyInformationPage;
 import childhomecare.pagesadmin.LoginPage;
@@ -16,7 +16,7 @@ public class FamilyInformationPageTest extends TestBase{
 	
 	LoginPage loginPage;
 	DashboardPage dashBoardPage;
-	ClientPage clientPage;
+	AdminClientPage clientPage;
 	FamilyInformationPage familyProfilePage;
 	ExcelUtility excelUtil;
 	
@@ -33,19 +33,19 @@ public class FamilyInformationPageTest extends TestBase{
 		familyProfilePage = new FamilyInformationPage();
 	}
 	
-	/*@Test (priority = 1)
+	@Test (enabled = false)
 	public void VerifyCorrctUserByEmailTest(){
 		ExcelUtility excelUtil = new ExcelUtility("E:\\WorkSpace\\childhomecare\\src\\main\\java\\childhomecare\\testdata\\TestData.xlsx");
 		int RowCount = excelUtil.getRowCount("ClientData");
 		for (int i=2; i<=RowCount; i++){
 			String EmailID = excelUtil.getCellData("ClientData", "Email", i);
 			clientPage.NavigateToClientProfilePage(EmailID);
-			String UserEmailID = clientProfilePage.VerifyClientByEmail();
+			String UserEmailID = familyProfilePage.VerifyClientByEmail();
 			Assert.assertEquals(EmailID, UserEmailID, "Primary parent's email ID is not matched");
 		}
 	}
 	
-	@Test (priority = 2)
+	@Test (enabled = false)
 	public void VerifyCorrectUserByNameTest() throws InterruptedException{
 		ExcelUtility excelUtil = new ExcelUtility("E:\\WorkSpace\\childhomecare\\src\\main\\java\\childhomecare\\testdata\\TestData.xlsx");
 		int RowCount = excelUtil.getRowCount("ClientData");
@@ -55,12 +55,12 @@ public class FamilyInformationPageTest extends TestBase{
 			String EmailID = excelUtil.getCellData("ClientData", "Email", i);
 			String FullName = FirstName +" " + LastName;
 			clientPage.NavigateToClientProfilePage(EmailID);
-			String UserName = clientProfilePage.VerifyClientByName();
+			String UserName = familyProfilePage.VerifyClientByName();
 			Assert.assertEquals(FullName, UserName, "Primary parent's name is not matched");
 		}
-	}*/
+	}
 	
-	@Test
+	@Test(priority = 1)
 	public void AddParent(){
 		
 		excelUtil = new ExcelUtility("E:\\WorkSpace\\childhomecare\\src\\main\\java\\childhomecare\\testdata\\TestData.xlsx");

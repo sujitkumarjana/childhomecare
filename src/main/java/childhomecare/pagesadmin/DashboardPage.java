@@ -1,5 +1,6 @@
 package childhomecare.pagesadmin;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -14,6 +15,8 @@ public class DashboardPage extends TestBase{
 			WebElement SitterPageLink;
 	@FindBy(xpath = "//*[text()='Administrators']")
 			WebElement AdministratorPageLink;
+	@FindBy(xpath = "//span[contains(text(),'Buy Client Package')]")
+			WebElement BuyClientPackageLink;
 	
 	public DashboardPage(){
 		PageFactory.initElements(driver, this);
@@ -24,21 +27,28 @@ public class DashboardPage extends TestBase{
 	}
 	
 	//Navigate to ClientListing Page
-	public ClientPage NavigateToClientListingPage(){
+	public AdminClientPage NavigateToClientListingPage(){
 		 ClientPageLink.click();
-		 return new ClientPage();
+		 return new AdminClientPage();
 	}
 	
 	//Navigate to SitterListing Page
-		public SitterPage NavigateToSitterListingPage(){
+		public AdminSitterPage NavigateToSitterListingPage(){
 		SitterPageLink.click();
-		return new SitterPage();		
+		return new AdminSitterPage();		
 		}
 		
 	//Navigate to Administrator Page	
 		public AdministratorPage NavigateToAdministratorPage(){
 			AdministratorPageLink.click();
 			return new AdministratorPage();
+		}
+		
+	//Navigate to BuyClientPackageLink
+		public AdminClientBuyPackage NavigateToBuyClientPackage(){
+			driver.findElement(By.xpath("//span[contains(text(),'Client Packages')]")).click();
+			BuyClientPackageLink.click();
+			return new AdminClientBuyPackage();
 		}
 	
 }

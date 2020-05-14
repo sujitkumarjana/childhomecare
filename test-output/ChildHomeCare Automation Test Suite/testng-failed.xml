@@ -6,7 +6,18 @@
   </listeners>
   <test name="ChildHomeCare Test Cases">
     <classes>
-      <class name="childhomecare.admintestcases.DashboardPageTest"/>
+      <class name="childhomecare.admintestcases.ClientPageTest"/>
     </classes>
   </test> <!-- ChildHomeCare Test Cases -->
+  <test name="ChildHomeCare Test Cases(failed)">
+    <classes>
+      <class name="childhomecare.admintestcases.ClientPageTest">
+        <methods>
+          <include name="Teardown"/>
+          <include name="Changeprofilehyperlink"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- childhomecare.admintestcases.ClientPageTest -->
+    </classes>
+  </test> <!-- ChildHomeCare Test Cases(failed) -->
 </suite> <!-- Failed suite [ChildHomeCare Automation Test Suite] -->

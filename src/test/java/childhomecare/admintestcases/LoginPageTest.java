@@ -25,7 +25,7 @@ public class LoginPageTest extends TestBase{
 		dashboardPage = new DashboardPage();
 	}
 	
-	/*@Test(priority = 1)
+	@Test(priority = 1)
 	public void verifyLoginPageTitleTest(){
 		String LoginPageTitle = loginPage.VerifyLoginPageTitle();
 		Assert.assertEquals(LoginPageTitle, "Child Home Care | Login", "Login Page Title Not Matched");
@@ -44,7 +44,7 @@ public class LoginPageTest extends TestBase{
 	@Test(priority = 4)
 	public void verifyForgotPasswordLinkTest(){
 		Assert.assertTrue(loginPage.VerifyForgotPasswordLink(), "Forgot Password Link Not Found");
-	}*/
+	}
 	
 	@Test(priority = 5)
 	public void VerifyLoginTest(){
@@ -53,10 +53,10 @@ public class LoginPageTest extends TestBase{
 		Assert.assertEquals(DashBoardPageTitle, "Child Home Care - Dashboard");dashboardPage.VerifyDashboardPageTitle();
 	}
 	
-	/*@AfterMethod
+	@AfterMethod
 	public void TearDown(){
 		driver.quit();
-	}*/
+	}
 	
 
 }

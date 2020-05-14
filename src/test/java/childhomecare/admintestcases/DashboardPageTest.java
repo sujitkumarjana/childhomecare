@@ -6,16 +6,16 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import childhomecare.base.TestBase;
-import childhomecare.pagesadmin.ClientPage;
+import childhomecare.pagesadmin.AdminClientPage;
+import childhomecare.pagesadmin.AdminSitterPage;
 import childhomecare.pagesadmin.DashboardPage;
 import childhomecare.pagesadmin.LoginPage;
-import childhomecare.pagesadmin.SitterPage;
 
 public class DashboardPageTest extends TestBase{
 	LoginPage loginPage;
 	DashboardPage dashBoardPage;
-	SitterPage sitterPage;
-	ClientPage clientPage;
+	AdminSitterPage sitterPage;
+	AdminClientPage clientPage;
 	
 	public DashboardPageTest(){
 		super();
@@ -27,12 +27,12 @@ public class DashboardPageTest extends TestBase{
 		initialization();
 		loginPage = new LoginPage();
 		dashBoardPage = loginPage.VerifyLogin(prop.getProperty("AdminUserName"), prop.getProperty("AdminPassword"));
-		sitterPage = new SitterPage();
-		clientPage = new ClientPage();
+		sitterPage = new AdminSitterPage();
+		clientPage = new AdminClientPage();
 	}
 	
 	@Test(priority = 1)
-	public void VerifyDashBoardPageTitleTest() throws InterruptedException{
+	public void VerifyDashBoardPageTitleTest(){
 		String DashBoardPageTitle = dashBoardPage.VerifyDashboardPageTitle();
 		Assert.assertEquals(DashBoardPageTitle, "Child Home Care - Dashboard", "Dashboard Page Title Not Matched");
 	}

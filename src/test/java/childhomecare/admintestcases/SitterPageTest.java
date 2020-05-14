@@ -6,16 +6,16 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import childhomecare.base.TestBase;
+import childhomecare.pagesadmin.AdminSitterPage;
 import childhomecare.pagesadmin.DashboardPage;
 import childhomecare.pagesadmin.LoginPage;
-import childhomecare.pagesadmin.SitterPage;
 import childhomecare.utilities.ExcelUtility;
 
 public class SitterPageTest extends TestBase{
 	
 	LoginPage loginPage;
 	DashboardPage dashBoardPage;
-	SitterPage sitterPage;
+	AdminSitterPage sitterPage;
 	
 	
 	public SitterPageTest(){
@@ -28,7 +28,7 @@ public class SitterPageTest extends TestBase{
 		loginPage = new LoginPage();
 		dashBoardPage = loginPage.VerifyLogin(prop.getProperty("AdminUserName"), prop.getProperty("AdminPassword"));
 		dashBoardPage.NavigateToSitterListingPage();
-		sitterPage = new SitterPage();
+		sitterPage = new AdminSitterPage();
 	}
 	
 	@Test(priority = 1)

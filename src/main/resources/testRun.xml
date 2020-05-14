@@ -8,10 +8,10 @@
 
 	<test name="ChildHomeCare Test Cases">
 		<classes>
-			<!-- <class name="childhomecare.admintestcases.LoginPageTest"></class> -->
-			<class name="childhomecare.admintestcases.DashboardPageTest"></class>
-			<!-- <class name="childhomecare.admintestcases.ClientPageTest"></class>
-			<class name="childhomecare.admintestcases.SitterPageTest"></class> -->
+			<!-- <class name="childhomecare.admintestcases.LoginPageTest"></class>
+			<class name="childhomecare.admintestcases.DashboardPageTest"></class> -->
+			<class name="childhomecare.admintestcases.ClientPageTest"></class>
+			<!-- <class name="childhomecare.admintestcases.SitterPageTest"></class> -->
 		</classes>
 	</test>
 </suite>

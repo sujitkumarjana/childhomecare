@@ -70,21 +70,16 @@ public class FamilyInformationPage extends TestBase{
 	public void AddParent(String ParentType, String ChildRelationship, String ParentFirstName, String ParentLastName, String ParentStreetAddress,
 			String ParentApartmentSuite, String ParentCountry, String ParentState, String ParentCity, String ParentZip, String ParentNeighborhood,
 			String ParentCellPhone, String ParentEmailAddress, String ParentSkypeId){
-		AddParentButton.click();
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
+		AddParentButton.click();		
 		List <WebElement> UserTypes = driver.findElements(By.xpath("//div[@id='divPrimaryInfo']/label"));
 		(new WebDriverWait(driver, 25)).until(ExpectedConditions.visibilityOfAllElements(UserTypes));
 		for(WebElement UserType : UserTypes){
 			String UT = UserType.getText();
-			System.out.println(UT);
 			if(UT.equals(ParentType)){
 				UserType.click();
+			}
+			else{
+				System.out.println("Parent Contact type not matched");
 			}
 		}
 		RelationshipToChild.sendKeys(ChildRelationship);
@@ -92,22 +87,33 @@ public class FamilyInformationPage extends TestBase{
 		AddParentLastName.sendKeys(ParentLastName);
 		StreetAddress.sendKeys(ParentStreetAddress);
 		ApartmentSuite.sendKeys(ParentApartmentSuite);
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 		//Way to Select Country
-		Actions action = new Actions(driver);
+		driver.findElement(By.xpath("//span[contains(text(), 'Select Country')]")).click();
+		System.out.println("Country dropdown clicked");
+		//driver.findElement(By.xpath("//*[@id='ddlCountry_chosen']/a/div/b")).click();
+		
+		/*List <WebElement> CountryList = driver.findElements(By.xpath("//div[@id='ddlCountry_chosen']//li"));
+		for(WebElement CountryLists : CountryList){
+			String CountryListText = CountryLists.getText();
+			System.out.println(CountryListText);
+			if(CountryListText.equalsIgnoreCase(ParentCountry)){
+				CountryLists.click();
+			}
+		}*/
+		
+		/*Select select = new Select (driver.findElement(By.id("ddlCountry")));
+		select.selectByVisibleText("United States");*/
+		
+		/*Actions action = new Actions(driver);
 		WebElement CountryDropDown = driver.findElement(By.xpath("//div[@id='ddlCountry_chosen']"));
 		action.moveToElement(CountryDropDown).click().perform();
 		Select select = new Select(driver.findElement(By.id("ddlCPStatus")));
 		select.selectByVisibleText(ParentCountry);
-		/*WebElement Country = driver.findElement(By.xpath("//li[text()='"+ ParentCountry +"']"));
+		WebElement Country = driver.findElement(By.xpath("//li[text()='"+ ParentCountry +"']"));
 		action.moveToElement(Country).click().perform();*/
 		
-		//Way to Select State
+		/*//Way to Select State
 		driver.findElement(By.xpath("//div[@id='ddlState_chosen']")).click();
 		driver.findElement(By.xpath("//li[contains(text(), '"+ ParentState +"')]")).click();
 		
@@ -115,7 +121,7 @@ public class FamilyInformationPage extends TestBase{
 		Zip.sendKeys(ParentZip);
 		CellPhone.sendKeys(ParentCellPhone);
 		EmailAddress.sendKeys(ParentEmailAddress);
-		SkypeID.sendKeys(ParentSkypeId);
+		SkypeID.sendKeys(ParentSkypeId);*/
 	}
 	
 

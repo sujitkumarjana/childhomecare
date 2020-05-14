@@ -48,8 +48,7 @@ public class LoginPage extends TestBase {
 	}
 	
 	public DashboardPage VerifyLogin(String UserName, String Password) {
-		/*js = (JavascriptExecutor) driver;
-		js.executeScript("document.getElementById('EmailAddress').value='"+UserName+"'");*/
+		
 		UserNameField.sendKeys(UserName);
 		PasswordField.sendKeys(Password);
 		try {

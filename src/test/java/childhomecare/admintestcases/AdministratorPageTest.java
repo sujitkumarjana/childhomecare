@@ -1,12 +1,10 @@
 package childhomecare.admintestcases;
 
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import childhomecare.base.TestBase;
 import childhomecare.pagesadmin.AdministratorPage;
-import childhomecare.pagesadmin.ClientPage;
 import childhomecare.pagesadmin.DashboardPage;
 import childhomecare.pagesadmin.LoginPage;
 import childhomecare.utilities.ExcelUtility;
