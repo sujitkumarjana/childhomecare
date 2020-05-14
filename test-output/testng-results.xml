@@ -1,51 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25141" started-at="2020-03-27T08:10:27Z" finished-at="2020-03-27T08:10:52Z">
+  <suite name="Default suite" duration-ms="187880" started-at="2020-05-14T09:32:13Z" finished-at="2020-05-14T09:35:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25141" started-at="2020-03-27T08:10:27Z" finished-at="2020-03-27T08:10:52Z">
+    <test name="Default test" duration-ms="187880" started-at="2020-05-14T09:32:13Z" finished-at="2020-05-14T09:35:21Z">
       <class name="childhomecare.admintestcases.AdminClientBuyPackageTest">
-        <test-method status="FAIL" signature="VerifyPackageName()[pri:0, instance:childhomecare.admintestcases.AdminClientBuyPackageTest@27f674d]" name="VerifyPackageName" duration-ms="3009" started-at="2020-03-27T13:40:27Z" finished-at="2020-03-27T13:40:30Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at childhomecare.admintestcases.AdminClientBuyPackageTest.VerifyPackageName(AdminClientBuyPackageTest.java:32)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyPackageName -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:childhomecare.admintestcases.AdminClientBuyPackageTest@27f674d]" name="setup" is-config="true" duration-ms="22115" started-at="2020-03-27T13:40:30Z" finished-at="2020-03-27T13:40:52Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:childhomecare.admintestcases.AdminClientBuyPackageTest@1d251891]" name="setup" is-config="true" duration-ms="12937" started-at="2020-05-14T15:02:13Z" finished-at="2020-05-14T15:02:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyActionColumnPresentorNotTest()[pri:0, instance:childhomecare.admintestcases.AdminClientBuyPackageTest@1d251891]" name="VerifyActionColumnPresentorNotTest" duration-ms="70" started-at="2020-05-14T15:02:26Z" finished-at="2020-05-14T15:02:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyActionColumnPresentorNotTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:childhomecare.admintestcases.AdminClientBuyPackageTest@1d251891]" name="setup" is-config="true" duration-ms="14401" started-at="2020-05-14T15:02:26Z" finished-at="2020-05-14T15:02:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyAppointmentTypeColumnPresentorNotTest()[pri:0, instance:childhomecare.admintestcases.AdminClientBuyPackageTest@1d251891]" name="VerifyAppointmentTypeColumnPresentorNotTest" duration-ms="41" started-at="2020-05-14T15:02:40Z" finished-at="2020-05-14T15:02:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAppointmentTypeColumnPresentorNotTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:childhomecare.admintestcases.AdminClientBuyPackageTest@1d251891]" name="setup" is-config="true" duration-ms="26065" started-at="2020-05-14T15:02:40Z" finished-at="2020-05-14T15:03:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyNoOfSessionsColumnPresentorNotTest()[pri:0, instance:childhomecare.admintestcases.AdminClientBuyPackageTest@1d251891]" name="VerifyNoOfSessionsColumnPresentorNotTest" duration-ms="45" started-at="2020-05-14T15:03:06Z" finished-at="2020-05-14T15:03:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyNoOfSessionsColumnPresentorNotTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:childhomecare.admintestcases.AdminClientBuyPackageTest@1d251891]" name="setup" is-config="true" duration-ms="16629" started-at="2020-05-14T15:03:06Z" finished-at="2020-05-14T15:03:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyPriceColumnPresentorNotTest()[pri:0, instance:childhomecare.admintestcases.AdminClientBuyPackageTest@1d251891]" name="VerifyPriceColumnPresentorNotTest" duration-ms="166" started-at="2020-05-14T15:03:23Z" finished-at="2020-05-14T15:03:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyPriceColumnPresentorNotTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:childhomecare.admintestcases.AdminClientBuyPackageTest@1d251891]" name="setup" is-config="true" duration-ms="29181" started-at="2020-05-14T15:03:23Z" finished-at="2020-05-14T15:03:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyPriceIDColumnPresentorNotTest()[pri:0, instance:childhomecare.admintestcases.AdminClientBuyPackageTest@1d251891]" name="VerifyPriceIDColumnPresentorNotTest" duration-ms="168" started-at="2020-05-14T15:03:52Z" finished-at="2020-05-14T15:03:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyPriceIDColumnPresentorNotTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:childhomecare.admintestcases.AdminClientBuyPackageTest@1d251891]" name="setup" is-config="true" duration-ms="36829" started-at="2020-05-14T15:03:53Z" finished-at="2020-05-14T15:04:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyServiceCategoryColumnPresentorNotTest()[pri:0, instance:childhomecare.admintestcases.AdminClientBuyPackageTest@1d251891]" name="VerifyServiceCategoryColumnPresentorNotTest" duration-ms="120" started-at="2020-05-14T15:04:29Z" finished-at="2020-05-14T15:04:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyServiceCategoryColumnPresentorNotTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:childhomecare.admintestcases.AdminClientBuyPackageTest@1d251891]" name="setup" is-config="true" duration-ms="50912" started-at="2020-05-14T15:04:30Z" finished-at="2020-05-14T15:05:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyTitleColumnPresentorNotTest()[pri:0, instance:childhomecare.admintestcases.AdminClientBuyPackageTest@1d251891]" name="VerifyTitleColumnPresentorNotTest" duration-ms="41" started-at="2020-05-14T15:05:20Z" finished-at="2020-05-14T15:05:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTitleColumnPresentorNotTest -->
       </class> <!-- childhomecare.admintestcases.AdminClientBuyPackageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

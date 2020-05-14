@@ -28,7 +28,7 @@ public class TestBase {
 		try {
 			prop = new Properties();
 			FileInputStream FI = new FileInputStream(
-					System.getProperty("user.dir") + "/src/main/java/childhomecare/config/Config.prpperties");
+					System.getProperty("user.dir") + "/src/main/java/childhomecare/config/Config.properties");
 			prop.load(FI);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
